@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt
+name: Build Lienol's OP 19.07 for ea6350v3 
 
 on:
   repository_dispatch:
@@ -18,14 +18,14 @@ on:
         description: 'SSH connection to Actions'
         required: false
         default: 'false'
-#  schedule:
-#    - cron: 0 8 * * 5
+  schedule:
+    - cron: 0 8 * * 5
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
-  REPO_BRANCH: master
-  FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: .config
+  REPO_URL: https://github.com/Lienol/openwrt
+  REPO_BRANCH: 19.07
+  FEEDS_CONF: dev-1907-feeds.conf.default.bak
+  CONFIG_FILE: ea6350v3-dev-19.07.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
