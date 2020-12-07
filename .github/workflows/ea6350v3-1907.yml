@@ -26,7 +26,7 @@ env:
   REPO_URL: https://github.com/Lienol/openwrt
   REPO_BRANCH: 19.07
   FEEDS_CONF: dev-1907-feeds.conf.default.bak
-  CONFIG_FILE: ea6350v3-dev-19.07.config
+  CONFIG_FILE: .config.ea6350v3-lienol-20201207-1436
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
